@@ -76,7 +76,7 @@ td {
 }
 #fullpage .section.s1 .bgs .bg {
   backface-visibility: hidden;
-  background: url("/img/starry-sky-1655503.jpg");
+  background: url("img/starry-sky-1655503.jpg");
   background-position: center left;
   background-size: 100vw 100%;
   background-repeat: repeat-x;
