@@ -36,6 +36,17 @@ $lightgrey:#F4F4F4;
 $grey:#bfc4c4;
 $black:#040809;
                 
+@keyframes fade-up {
+    0% {
+        transform: translateY(5%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
 @keyframes bg {
     0% {
         transform: translate3d(0,0,0);
@@ -54,6 +65,14 @@ $black:#040809;
             font-size: 5vw;
             font-family: $eng_serif;
         }
+        &.active {
+            .title {
+                animation: fade-up 1s ease-out forwards;
+            }
+            > div {
+                animation: fade-up 1s .1s ease-out forwards;
+            }
+        }
         &.s1 {
             position: relative;
             width: 100vw;
@@ -65,7 +84,7 @@ $black:#040809;
                 display: flex;
                 transform: translate3d(0,0,0);
                 animation: bg 60s linear infinite;
-                filter:brightness(.5);
+                filter:brightness(.4);
                 .bg {
                     backface-visibility: hidden;
                     background: url("../img/starry-sky-1655503.jpg");
@@ -85,13 +104,13 @@ $black:#040809;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
+                align-items: center;            
                 > h6 {
                     font-family: $kor_sans;
                     color: #FFF;
                     font-weight: 300;
                     font-size: 1.2vw;
-                    text-shadow: 1px 1px 20px #0003;
+                    text-shadow: 2px 2px 20px #0005;
                     line-height: 200%;
                     letter-spacing: -.1vw;
                 }
@@ -439,6 +458,22 @@ $black:#040809;
                                     }
                                 }
                             }
+                        }
+                    }
+                    .swiper-button-prev {
+                        opacity: .6;
+                        outline: none;
+                        transition: all .5s;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                    .swiper-button-next {
+                        opacity: .6;
+                        outline: none;
+                        transition: all .5s;
+                        &:hover {
+                            opacity: 1;
                         }
                     }
                     .swiper-pagination {
@@ -836,7 +871,15 @@ $black:#040809;
                         flex-direction: column;
                         align-items: center;
                         justify-content: flex-end;
-                        margin-top: 4%;
+                        margin-top: 4%;                    
+                        > div {
+                            &:hover {
+                                > a {
+                                    color: #FFF;
+                                    transform: translateY(-10%);
+                                }
+                            }                           
+                        }
                         > div {
                             display: flex;
                             flex-direction: column;
@@ -845,6 +888,7 @@ $black:#040809;
                                 font-size: 4vw;
                                 color: $lightgrey;
                                 margin-bottom: 1vw;
+                                transition: all .5s;
                             }
                             > h6 {
                                 font-family: $eng_serif;

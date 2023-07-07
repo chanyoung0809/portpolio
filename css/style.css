@@ -44,6 +44,16 @@ td {
   padding: 0;
 }
 
+@keyframes fade-up {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 @keyframes bg {
   0% {
     transform: translate3d(0, 0, 0);
@@ -60,6 +70,12 @@ td {
   font-size: 5vw;
   font-family: "KENOKY", sans-serif;
 }
+#fullpage .section.active .title {
+  animation: fade-up 1s ease-out forwards;
+}
+#fullpage .section.active > div {
+  animation: fade-up 1s 0.1s ease-out forwards;
+}
 #fullpage .section.s1 {
   position: relative;
   width: 100vw;
@@ -72,7 +88,7 @@ td {
   display: flex;
   transform: translate3d(0, 0, 0);
   animation: bg 60s linear infinite;
-  filter: brightness(0.5);
+  filter: brightness(0.4);
 }
 #fullpage .section.s1 .bgs .bg {
   backface-visibility: hidden;
@@ -99,7 +115,7 @@ td {
   color: #FFF;
   font-weight: 300;
   font-size: 1.2vw;
-  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3333333333);
   line-height: 200%;
   letter-spacing: -0.1vw;
 }
@@ -445,6 +461,22 @@ td {
 #fullpage .section.s3 .wrap .swiper.co_workers .swiper-wrapper .swiper-slide .center .talks > img:hover {
   filter: grayscale(0);
 }
+#fullpage .section.s3 .wrap .swiper.co_workers .swiper-button-prev {
+  opacity: 0.6;
+  outline: none;
+  transition: all 0.5s;
+}
+#fullpage .section.s3 .wrap .swiper.co_workers .swiper-button-prev:hover {
+  opacity: 1;
+}
+#fullpage .section.s3 .wrap .swiper.co_workers .swiper-button-next {
+  opacity: 0.6;
+  outline: none;
+  transition: all 0.5s;
+}
+#fullpage .section.s3 .wrap .swiper.co_workers .swiper-button-next:hover {
+  opacity: 1;
+}
 #fullpage .section.s3 .wrap .swiper.co_workers .swiper-pagination {
   bottom: 4%;
   left: -8%;
@@ -601,7 +633,7 @@ td {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 #fullpage .section.s4 .center .contents_wrap .content .left_content > .swiper {
   width: 80%;
@@ -835,6 +867,10 @@ td {
   justify-content: flex-end;
   margin-top: 4%;
 }
+#fullpage .section.s5 .wrap .contacts .contact > div:hover > a {
+  color: #FFF;
+  transform: translateY(-10%);
+}
 #fullpage .section.s5 .wrap .contacts .contact > div {
   display: flex;
   flex-direction: column;
@@ -844,6 +880,7 @@ td {
   font-size: 4vw;
   color: #F4F4F4;
   margin-bottom: 1vw;
+  transition: all 0.5s;
 }
 #fullpage .section.s5 .wrap .contacts .contact > div > h6 {
   font-family: "KENOKY", sans-serif;
