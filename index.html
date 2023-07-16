@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portpolio</title>
+    <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- 구글 웹 폰트 아이콘 -->
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <!-- 구글 웹 폰트(한글) -->
     <link href="https://fonts.cdnfonts.com/css/kenoky" rel="stylesheet">
@@ -18,7 +20,7 @@
     <!-- 스와이퍼 css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="dark">
     <div id="fullpage">
         <div class="section s1" data-anchor="#intro">
             <div class="bgs">
@@ -26,11 +28,10 @@
             </div>
             <div class="center">
                 <h6>별보다 무수한 가능성을 품은</h6>
-                <h2>Chan’s Portpolio</h2>
+                <h2>Chan’s Portfolio</h2>
             </div>
         </div>
         <div class="section s2" data-anchor="#about">
-            <div class="title"><h2>About Me</h2></div>
             <div class="wrap">
                 <div class="spec_wrap">
                     <div class="sub_title"><h4>EDUCATION</h4></div>
@@ -51,7 +52,7 @@
                     <div class="sub_title"><h4>EXPERIENCE</h4></div>
                     <div class="experience">
                         <div class="jobs">
-                            <span class="date">2015. 12 - 2021. 02</span>
+                            <span class="date">2015. 12 - 2023. 05</span>
                             <span class="job">대형마트 및 페어 행사 주류 시음, 판촉 계약직 근무</span>
                         </div>
                         <div class="jobs">
@@ -144,153 +145,34 @@
                 </div>
             </div>
         </div>
-        <div class="section s3" data-anchor="#strength">
-            <div class="title"><h2>My Strength</h2></div>
-            <div class="wrap">
-                <div class="swiper co_workers">
-                    <div class="swiper-wrapper"> 
+        <div class="section s3" data-anchor="#portfolio">
+            <div class="center">
+                <div class="swiper portfolioSwiper">
+                    <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="center">
-                                <div class="personal">
-                                    <div class="left">
-                                        <div class="thumbnail">
-                                            <img src="img/profile1.jpg">
-                                        </div>
-                                        <span class="name">이○은</span>
-                                        <span class="role">백화점 내 경쟁업체 직원</span>
-                                    </div>
-                                    <div class="right">
-                                        <div class="highlight">
-                                            <span>“책임감이 강하고 부지런해요”</span>
-                                        </div>
-                                        <p>같이 일하면서 본 찬영이는 책임감이 강하고 성실한 사람이였습니다. 백화점 근무 특성상 휴일이 불규칙하고, 일하다 보면 지칠 때도 있기 마련인데 언제나 고객 한명도 놓치지 않으려 노력했습니다. 처음 보는 상품에 대해서도 상품에 대한 정보를 스스로 찾아서 공부하고, 손님들에게 설명도 자세하게 잘 했습니다.</p> 
-                                        <p>항상 정상적인 출근시간보다 일찍 도착해서 미리 준비하는 모습을 보여줬고, 1년간 같이 근무하면서 근무 태도에 있어서 문제를 한 번도 일으킨 적이 없습니다. 경쟁업체 직원이었고, 저보다 어린 친구이지만 존경할 점이 많은 사람이라고 생각했습니다.</p>
-                                    </div>
-                                </div>
-                                <div class="talks">
-                                    <img src="img/sc_KakaoTalk.png">
-                                    <img src="img/sc_KakaoTalk.png">
-                                </div>
-                            </div>     
+                            <img src="/img/aiCapture.png">
+                            <a class="moreview" href="#">
+                                <h6>AI Expo Korea</h6>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="center">
-                                <div class="personal">
-                                    <div class="left">
-                                        <div class="thumbnail">
-                                            <img src="img/profile2.jpg">
-                                        </div>
-                                        <span class="name">김○연</span>
-                                        <span class="role">아르바이트 동료</span>
-                                    </div>
-                                    <div class="right">
-                                        <div class="highlight">
-                                            <span>“커뮤니케이션 능력이 뛰어나요”</span>
-                                        </div>
-                                        <p>같은 곳에서 단기 아르바이트를 할 기회가 있었는데, 처음 해보는 업무와 낯선 환경임에도 크게 긴장하지 않고 잘 적응하는 모습을 볼 수 있었어. 데이터 바인딩이라는 업무 자체가 당시엔 좀 생소했는데도 열심히 잘 해줬어. 혹시 이해가 되지 않는 부분이 있으면 상급자와 적극적으로 소통하기 위해 노력하는 면모도 엿볼 수 있었어. 업무량이 꽤 많았는데, 본인이 맡은 업무 분량은 끝까지 책임지고 해내줘서 맘이 편했어.</p>
-                                        <p>아르바이트 기간이 길지는 않았지만, 짧은 기간 동안에 친구로만 지낼 때는 알 수 없었던 장점을 많이 알 수 있었어. 일이 힘들어서 중간 탈주자가 많은 아르바이트였는데, 책임감도 강하고 예의바르고, 성실하게 일하는 모습이 인상깊었어.</p>
-                                    </div>
-                                </div>
-                                <div class="talks">
-                                    <img src="img/sc_KakaoTalk.png">
-                                    <img src="img/sc_KakaoTalk.png">
-                                </div>
-                            </div>     
+                            <img src="/img/pinkgymCapture.png">
+                            <a class="moreview" href="#">
+                                <h6>Pink Lady Gym</h6>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="center">
-                                <div class="personal">
-                                    <div class="left">
-                                        <div class="thumbnail">
-                                            <img src="img/profile3.jpg">
-                                        </div>
-                                        <span class="name">김○진</span>
-                                        <span class="role">백화점 내 경쟁업체 직원 / 대형마트 와인 매니저</span>
-                                    </div>
-                                    <div class="right">
-                                        <div class="highlight">
-                                            <span>“성실하고 적극적으로 일해요”</span>
-                                        </div>
-                                        <p>1년 동안 백화점에서 같이 일하면서 본 찬영이는 근면성실이라는 말이 참 잘 어울리는 동생이었습니다. 서비스직이기 때문에 업무 지시도 시시각각 달라지고 업무 종류도 다양했지만 군소리없이 모든 일을 잘 해줬습니다. 말수가 많지 않고 조용한 편인 찬영이지만, 타 업체 직원들끼리 혹여 오해가 생기지 않도록 업무 내내 다른 직원들과 업무 내용에 대해서는 대화를 많이 하는 모습을 보여줬습니다.</p> 
-                                        <p>근무지를 옮기게 되어 찬영이를 아르바이트생으로 고용하게 되었을 때도, 아는 사람이 상사라고 꾀부리지 않고 오히려 저보다 책임감있고 적극적으로 일하는 모습을 보여줬습니다. 마음같아서는 쭉 같이 일해줬으면 하지만, 찬영이의 새로운 출발을 응원해주고 싶습니다.</p>
-                                    </div>
-                                </div>
-                                <div class="talks">
-                                    <img src="img/sc_KakaoTalk.png">
-                                    <img src="img/sc_KakaoTalk.png">
-                                </div>
-                            </div>     
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="center">
-                                <div class="personal">
-                                    <div class="left">
-                                        <div class="thumbnail">
-                                            <img src="img/profile4.jpg">
-                                        </div>
-                                        <span class="name">박○연</span>
-                                        <span class="role">글쓰기 첨삭 클라이언트</span>
-                                    </div>
-                                    <div class="right">
-                                        <div class="highlight">
-                                            <span>“시간 약속을 잘 지켜요”</span>
-                                        </div>
-                                        <p>기존에 다니던 대학교에서 편입 준비를 하게 됐는데, 전문 학원은 비용이 많이 부담되는 편이어서 친구로 잘 알고 지내던 너한테 자소서와 대학 편입논술 첨삭을 부탁했어. 입시용 논술이 처음인 나에게 맞춰서 하나하나 세세하게 가르쳐주고, 답변이 빠른 편이라 피드백도 바로바로 받을 수 있어서 좋았어.</p>
-                                        <p>아는 사람이고, 다른 일을 병행하면서 첨삭 일을 했었는데도 약속 시간을 잘 지켜줘서 고마웠어. 자소서는 처음 써보는 게 아니었는데도, 부족했던 부분을 잘 찾아주고 보완할 수 있는 방법을 같이 고민하고 찾아줘서 좋은 결과를 볼 수 있었어. </p>
-                                    </div>
-                                </div>
-                                <div class="talks">
-                                    <img src="img/sc_KakaoTalk.png">
-                                    <img src="img/sc_KakaoTalk.png">
-                                </div>
-                            </div>     
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="center">
-                                <div class="personal">
-                                    <div class="left">
-                                        <div class="thumbnail">
-                                            <img src="img/profile5.jpg">
-                                        </div>
-                                        <span class="name">박○리</span>
-                                        <span class="role">대형마트 와인 매니저</span>
-                                    </div>
-                                    <div class="right">
-                                        <div class="highlight">
-                                            <span>“일 잘하는 센스있는 친구”</span>
-                                        </div>
-                                        <p>업무 센스가 좋고 습득이 매우 빠릅니다. 한 가지 업무를 지시하면 두 세 가지의 연관 업무를 알아서 센스있게 하는 친구였습니다. 동종업계 경력이 있다고는 하지만, 전혀 다른 브랜드에서 근무하는 것인데도 업무에 굉장히 빠르게 적응했습니다. 매장 매니저인 제가 자리를 비워도 큰 문제가 없을 정도로 일처리에 빈틈이 없었습니다. 제법 오래 이 일을 해왔고 많은 아르바이트생을 고용해봤지만, 같이 일해본 친구 중에 일을 제일 잘했던 친구입니다.</p> 
-                                        <p>근무 태도도 성실했고, 아르바이트로 근무하면서도 똑부러지게 일했던 친구입니다. 찬영씨 본인이 꿈꿔왔던 일을 한다면 이같은 장점은 더 큰 빛을 발할 것이라 생각합니다.</p>
-                                    </div>
-                                </div>
-                                <div class="talks">
-                                    <img src="img/sc_KakaoTalk.png">
-                                    <img src="img/sc_KakaoTalk.png">
-                                </div>
-                            </div>     
+                            <img src="/img/jamesonCapture.png">
+                            <a class="moreview" href="#">
+                                <h6>Jameson Whiskey</h6>
+                            </a>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-            </div>
-            <div class="photo">
-                <button class="close">×</button>
-                <img src="img/sc_KakaoTalk.png">
-            </div>
-        </div>
-        <div class="section s4" data-anchor="#portpolio">
-            <div class="title"><h2>My Portpolio</h2></div>
-            <div class="center">
-                <div class="menu_wrap">
-                    <ul class="menu">
-                        <li><a href="#" data-idx="0" class="on">AI EXPO</a></li>
-                        <li><a href="#" data-idx="1">JAMESON WHISKEY</a></li>
-                        <li><a href="#" data-idx="2">PINK LADY GYM</a></li>
-                    </ul>
-                </div>
-                <div class="contents_wrap">
+                <!-- <div class="contents_wrap">
                     <div class="content on" data-idx="0">
                         <div class="left_content">
                             <div class="swiper pSwiper1">
@@ -432,11 +314,145 @@
                             <div class="plugin"># swiper, 카카오맵 플러그인(API) 사용</div>
                         </div>
                     </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="section s4" data-anchor="#strength">
+            <div class="wrap">
+                <div class="swiper co_workers">
+                    <div class="swiper-wrapper"> 
+                        <div class="swiper-slide">
+                            <div class="center">
+                                <div class="personal">
+                                    <div class="left">
+                                        <div class="thumbnail">
+                                            <img src="img/profile1.jpg">
+                                        </div>
+                                        <span class="name">이○은</span>
+                                        <span class="role">백화점 내 경쟁업체 직원</span>
+                                    </div>
+                                    <div class="right">
+                                        <div class="highlight">
+                                            <span>“책임감이 강하고 부지런해요”</span>
+                                        </div>
+                                        <p>같이 일하면서 본 찬영이는 책임감이 강하고 성실한 사람이였습니다. 백화점 근무 특성상 휴일이 불규칙하고, 일하다 보면 지칠 때도 있기 마련인데 언제나 고객 한명도 놓치지 않으려 노력했습니다. 처음 보는 상품에 대해서도 상품에 대한 정보를 스스로 찾아서 공부하고, 손님들에게 설명도 자세하게 잘 했습니다.</p> 
+                                        <p>항상 정상적인 출근시간보다 일찍 도착해서 미리 준비하는 모습을 보여줬고, 1년간 같이 근무하면서 근무 태도에 있어서 문제를 한 번도 일으킨 적이 없습니다. 경쟁업체 직원이었고, 저보다 어린 친구이지만 존경할 점이 많은 사람이라고 생각했습니다.</p>
+                                    </div>
+                                </div>
+                                <div class="talks">
+                                    <img src="img/sc_KakaoTalk.png">
+                                    <img src="img/sc_KakaoTalk.png">
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="center">
+                                <div class="personal">
+                                    <div class="left">
+                                        <div class="thumbnail">
+                                            <img src="img/profile2.jpg">
+                                        </div>
+                                        <span class="name">김○연</span>
+                                        <span class="role">아르바이트 동료</span>
+                                    </div>
+                                    <div class="right">
+                                        <div class="highlight">
+                                            <span>“커뮤니케이션 능력이 뛰어나요”</span>
+                                        </div>
+                                        <p>같은 곳에서 단기 아르바이트를 할 기회가 있었는데, 처음 해보는 업무와 낯선 환경임에도 크게 긴장하지 않고 잘 적응하는 모습을 볼 수 있었어. 데이터 바인딩이라는 업무 자체가 당시엔 좀 생소했는데도 열심히 잘 해줬어. 혹시 이해가 되지 않는 부분이 있으면 상급자와 적극적으로 소통하기 위해 노력하는 면모도 엿볼 수 있었어. 업무량이 꽤 많았는데, 본인이 맡은 업무 분량은 끝까지 책임지고 해내줘서 맘이 편했어.</p>
+                                        <p>아르바이트 기간이 길지는 않았지만, 짧은 기간 동안에 친구로만 지낼 때는 알 수 없었던 장점을 많이 알 수 있었어. 일이 힘들어서 중간 탈주자가 많은 아르바이트였는데, 책임감도 강하고 예의바르고, 성실하게 일하는 모습이 인상깊었어.</p>
+                                    </div>
+                                </div>
+                                <div class="talks">
+                                    <img src="img/sc_KakaoTalk.png">
+                                    <img src="img/sc_KakaoTalk.png">
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="center">
+                                <div class="personal">
+                                    <div class="left">
+                                        <div class="thumbnail">
+                                            <img src="img/profile3.jpg">
+                                        </div>
+                                        <span class="name">김○진</span>
+                                        <span class="role">백화점 내 경쟁업체 직원 / 대형마트 와인 매니저</span>
+                                    </div>
+                                    <div class="right">
+                                        <div class="highlight">
+                                            <span>“성실하고 적극적으로 일해요”</span>
+                                        </div>
+                                        <p>1년 동안 백화점에서 같이 일하면서 본 찬영이는 근면성실이라는 말이 참 잘 어울리는 동생이었습니다. 서비스직이기 때문에 업무 지시도 시시각각 달라지고 업무 종류도 다양했지만 군소리없이 모든 일을 잘 해줬습니다. 말수가 많지 않고 조용한 편인 찬영이지만, 타 업체 직원들끼리 혹여 오해가 생기지 않도록 업무 내내 다른 직원들과 업무 내용에 대해서는 대화를 많이 하는 모습을 보여줬습니다.</p> 
+                                        <p>근무지를 옮기게 되어 찬영이를 아르바이트생으로 고용하게 되었을 때도, 아는 사람이 상사라고 꾀부리지 않고 오히려 저보다 책임감있고 적극적으로 일하는 모습을 보여줬습니다. 마음같아서는 쭉 같이 일해줬으면 하지만, 찬영이의 새로운 출발을 응원해주고 싶습니다.</p>
+                                    </div>
+                                </div>
+                                <div class="talks">
+                                    <img src="img/sc_KakaoTalk.png">
+                                    <img src="img/sc_KakaoTalk.png">
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="center">
+                                <div class="personal">
+                                    <div class="left">
+                                        <div class="thumbnail">
+                                            <img src="img/profile4.jpg">
+                                        </div>
+                                        <span class="name">박○연</span>
+                                        <span class="role">글쓰기 첨삭 클라이언트</span>
+                                    </div>
+                                    <div class="right">
+                                        <div class="highlight">
+                                            <span>“시간 약속을 잘 지켜요”</span>
+                                        </div>
+                                        <p>기존에 다니던 대학교에서 편입 준비를 하게 됐는데, 전문 학원은 비용이 많이 부담되는 편이어서 친구로 잘 알고 지내던 너한테 자소서와 대학 편입논술 첨삭을 부탁했어. 입시용 논술이 처음인 나에게 맞춰서 하나하나 세세하게 가르쳐주고, 답변이 빠른 편이라 피드백도 바로바로 받을 수 있어서 좋았어.</p>
+                                        <p>아는 사람이고, 다른 일을 병행하면서 첨삭 일을 했었는데도 약속 시간을 잘 지켜줘서 고마웠어. 자소서는 처음 써보는 게 아니었는데도, 부족했던 부분을 잘 찾아주고 보완할 수 있는 방법을 같이 고민하고 찾아줘서 좋은 결과를 볼 수 있었어. </p>
+                                    </div>
+                                </div>
+                                <div class="talks">
+                                    <img src="img/sc_KakaoTalk.png">
+                                    <img src="img/sc_KakaoTalk.png">
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="center">
+                                <div class="personal">
+                                    <div class="left">
+                                        <div class="thumbnail">
+                                            <img src="img/profile5.jpg">
+                                        </div>
+                                        <span class="name">박○리</span>
+                                        <span class="role">대형마트 와인 매니저</span>
+                                    </div>
+                                    <div class="right">
+                                        <div class="highlight">
+                                            <span>“일 잘하는 센스있는 친구”</span>
+                                        </div>
+                                        <p>업무 센스가 좋고 습득이 매우 빠릅니다. 한 가지 업무를 지시하면 두 세 가지의 연관 업무를 알아서 센스있게 하는 친구였습니다. 동종업계 경력이 있다고는 하지만, 전혀 다른 브랜드에서 근무하는 것인데도 업무에 굉장히 빠르게 적응했습니다. 매장 매니저인 제가 자리를 비워도 큰 문제가 없을 정도로 일처리에 빈틈이 없었습니다. 제법 오래 이 일을 해왔고 많은 아르바이트생을 고용해봤지만, 같이 일해본 친구 중에 일을 제일 잘했던 친구입니다.</p> 
+                                        <p>근무 태도도 성실했고, 아르바이트로 근무하면서도 똑부러지게 일했던 친구입니다. 찬영씨 본인이 꿈꿔왔던 일을 한다면 이같은 장점은 더 큰 빛을 발할 것이라 생각합니다.</p>
+                                    </div>
+                                </div>
+                                <div class="talks">
+                                    <img src="img/sc_KakaoTalk.png">
+                                    <img src="img/sc_KakaoTalk.png">
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+            </div>
+            <div class="photo">
+                <button class="close">×</button>
+                <img src="img/sc_KakaoTalk.png">
             </div>
         </div>
         <div class="section s5" data-anchor="#contact">
-            <div class="title"><h2>Contact Me</h2></div>
             <div class="wrap">
                 <div class="profile">
                     <img src="img/profile.jpg">                                  
@@ -482,10 +498,13 @@
     <ul id="navis">
         <li data-menuanchor="intro"><a href="#intro" class="active">Intro</a></li>
         <li data-menuanchor="about"><a href="#about">About</a></li>
+        <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
         <li data-menuanchor="strength"><a href="#strength">Strength</a></li>
-        <li data-menuanchor="portpolio"><a href="#portpolio">Portpolio</a></li>
         <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
     </ul>
+    <button id="toggle_btn">
+        <span class="material-symbols-outlined">light_mode</span>
+    </button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
     <!-- 풀페이지 js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -499,5 +518,8 @@
     <script src="js/open.js"></script>
     <!-- 사진 크게보기 -->
     <script src="js/copynpaste.js"></script>
+    <!-- 카피페 기능 -->
+    <script src="js/darkmode.js"></script>
+    <!-- 다크모드 조작 기능 -->
 </body>
 </html>
