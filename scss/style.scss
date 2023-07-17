@@ -319,7 +319,7 @@ body {
                     .swiper.portfolioSwiper {
                         width: 100%;
                         .swiper-wrapper {
-                            height: 36vw;
+                            height: 70vh;
                             align-items: center;
                             .swiper-slide {
                                 width: 28vw;
@@ -1136,6 +1136,7 @@ body.dark {
                                 font-weight: 700;
                                 font-size: 1.8vw;
                                 font-family: $kor_serif;
+                                color:$white;
                             }
                         }
                         .education {
@@ -1299,6 +1300,7 @@ body.dark {
                         width: 100%;
                         .swiper-wrapper {
                             height: 70vh;
+                            align-items: center;
                             .swiper-slide {
                                 width: 24vw;
                                 height: 100%;

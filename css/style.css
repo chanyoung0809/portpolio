@@ -308,7 +308,7 @@ body #fullpage .section.s3 .center .swiper.portfolioSwiper {
   width: 100%;
 }
 body #fullpage .section.s3 .center .swiper.portfolioSwiper .swiper-wrapper {
-  height: 36vw;
+  height: 70vh;
   align-items: center;
 }
 body #fullpage .section.s3 .center .swiper.portfolioSwiper .swiper-wrapper .swiper-slide {
@@ -1100,6 +1100,7 @@ body.dark #fullpage .section.s2 .wrap .spec_wrap .sub_title > h4 {
   font-weight: 700;
   font-size: 1.8vw;
   font-family: "Noto Serif KR", serif;
+  color: #F2F2F2;
 }
 body.dark #fullpage .section.s2 .wrap .spec_wrap .education {
   display: flex;
@@ -1255,6 +1256,7 @@ body.dark #fullpage .section.s3 .center .swiper.portfolioSwiper {
 }
 body.dark #fullpage .section.s3 .center .swiper.portfolioSwiper .swiper-wrapper {
   height: 70vh;
+  align-items: center;
 }
 body.dark #fullpage .section.s3 .center .swiper.portfolioSwiper .swiper-wrapper .swiper-slide {
   width: 24vw;
