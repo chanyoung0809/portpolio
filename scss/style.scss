@@ -434,26 +434,24 @@ body {
                                     }
                                 }
                             }
-                            .swiper-button-next {
-                                right: 0;
-                            }
-                            .swiper-button-prev {
-                                left: 0;
-                            }
                         }
                         .swiper-button-next {
                             outline: none;
                             background-color: $gray90;
-                            padding: 24% 1%;
+                            padding: 0% 1%;
                             right: 0;
-                            top: 0;
+                            top: 50%;
+                            height: 110%;
+                            transform: translateY(-50%);
                         }
                         .swiper-button-prev {
                             outline: none;
                             background-color: $gray90;
-                            padding: 24% 1%;
+                            padding: 0 1%;
                             left: 0;
-                            top: 0;
+                            top: 50%;
+                            height: 110%;
+                            transform: translateY(-50%);
                         }
                     }
                     .contents_wrap {
@@ -1422,16 +1420,20 @@ body.dark {
                         .swiper-button-next {
                             outline: none;
                             background-color: $black;
-                            padding: 24% 1%;
+                            padding: 0% 1%;
                             right: 0;
-                            top: 0;
+                            top: 50%;
+                            height: 110%;
+                            transform: translateY(-50%);
                         }
                         .swiper-button-prev {
                             outline: none;
                             background-color: $black;
-                            padding: 24% 1%;
+                            padding: 0 1%;
                             left: 0;
-                            top: 0;
+                            top: 50%;
+                            height: 110%;
+                            transform: translateY(-50%);
                         }
                     }
                     .contents_wrap {
