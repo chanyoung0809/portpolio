@@ -11,20 +11,3 @@ Array.from(items).forEach((item ,idx)=>{
         Array.from(contexts)[idx].classList.add("on");
     });
 })
-
-const contents = document.querySelectorAll(".contents_wrap > .content");
-const tabmenus = document.querySelectorAll(".menu_wrap > .menu > li > a");
-
-tabmenus.forEach((item, i)=>{
-    item.addEventListener("click", ()=>{
-        let dataidx = item.dataset.idx;
-        tabmenus.forEach((el)=>{
-            el.classList.remove("on");
-        })
-        contents.forEach((el)=>{
-            el.classList.remove("on");
-        })
-        item.classList.add("on");
-        contents[dataidx].classList.add("on");
-    });
-});
