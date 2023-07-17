@@ -43,7 +43,15 @@ $black:#0c0c0c;
     --swiper-theme-color: $black;
     --swiper-navigation-size: 3vw;
 }
-                
+@keyframes float {
+    0% {
+        transform: translateY(5%);
+    }
+    100% {
+        transform: translateY(15%);
+    }
+}                  
+
 @keyframes fade-up {
     0% {
         transform: translateY(5%);
@@ -911,18 +919,11 @@ body {
                                         transform: translateY(-10%);
                                     }
                                 }      
-                                > h6 {
-                                    font-family: $eng_serif;
-                                    font-size: 1.6vw;
-                                    font-weight: 300;
-                                    line-height: 120%;
-                                    color: $gray15;
-                                }
                             }
                             > p {
                                 color: $gray15;
-                                font-family: $eng_serif;
-                                font-size: 2vw;
+                                font-family: $kor_serif;
+                                font-size: calc(16px + .8vw);
                                 font-weight: 300;
                                 line-height: 160%;
                                 margin-bottom: 1%;
@@ -1817,12 +1818,21 @@ body.dark {
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        > img {
-                            width:10vw;
-                            height:10vw;
+                        .imgWrap {
                             border: .2vw solid $white;
                             border-radius: 50%;
                             margin-bottom: 2%;
+                            width:12vw;
+                            height:12vw;
+                            overflow: hidden;
+                            background-image: url("../img/profile_bg.png");
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            > img {
+                                width: 90%;
+                                animation: float 2s ease-in-out infinite alternate;
+                            }
                         }
                         > div {
                             display: flex;
@@ -1886,17 +1896,10 @@ body.dark {
                                         transform: translateY(-10%);
                                     }
                                 }        
-                                > h6 {
-                                    font-family: $eng_serif;
-                                    font-size: 1.6vw;
-                                    font-weight: 300;
-                                    line-height: 120%;
-                                    color: $gray85;
-                                }
                             }
                             > p {
-                                font-family: $eng_serif;
-                                font-size: 2vw;
+                                font-family: $kor_serif;
+                                font-size: calc(16px + .8vw);
                                 font-weight: 300;
                                 line-height: 160%;
                                 margin-bottom: 1%;
