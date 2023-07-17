@@ -995,8 +995,8 @@ body #toggle_btn {
   border-radius: 50%;
   z-index: 101;
   position: fixed;
-  top: 1em;
-  right: 1em;
+  top: 2em;
+  right: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1935,8 +1935,8 @@ body.dark #toggle_btn {
   border-radius: 50%;
   z-index: 101;
   position: fixed;
-  top: 1em;
-  right: 1em;
+  top: 2em;
+  right: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
