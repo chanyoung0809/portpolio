@@ -596,6 +596,7 @@ body {
                                         padding: 2% 1%;
                                         border: .1vw solid $gray15;
                                         text-align: center;
+                                        cursor: pointer;
                                         transition: all .5s;
                                         &:hover {
                                             background-color: $gray15;
@@ -1583,6 +1584,7 @@ body.dark {
                                         padding: 2% 1%;
                                         border: .1vw solid $gray75;
                                         text-align: center;
+                                        cursor: pointer;
                                         transition: all .5s;
                                         &:hover {
                                             background-color: $white;
