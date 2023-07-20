@@ -1,3 +1,4 @@
+// strength 스와이퍼
 const swiper = new Swiper('.co_workers', {
     // Optional parameters
     direction: 'horizontal',
@@ -11,10 +12,6 @@ const swiper = new Swiper('.co_workers', {
     keyboard: {
       enabled: true,
     },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
@@ -22,6 +19,7 @@ const swiper = new Swiper('.co_workers', {
     },
 });
 
+// 포트폴리오 목록 스와이퍼
 const portfolioSwiper = new Swiper(".portfolioSwiper", {
   direction: 'horizontal',  
   effect: "coverflow",
@@ -47,11 +45,12 @@ const portfolioSwiper = new Swiper(".portfolioSwiper", {
   },
 });
 
-const swiper1 = new Swiper('.pSwiper1', {
+// 포트폴리오 내 스와이퍼들 반복문 처리
+const swiperOptions = {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  grabCursor:true,
+  grabCursor: true,
   autoplay: {
     delay: 5000,
   },
@@ -60,44 +59,20 @@ const swiper1 = new Swiper('.pSwiper1', {
     el: ".swiper-pagination",
     type: "fraction",
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-const swiper2 = new Swiper('.pSwiper2', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  grabCursor:true,
-  autoplay: {
-    delay: 5000,
-  },
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
+  keyboard: {
+    enabled: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-});
-const swiper3 = new Swiper('.pSwiper3', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  grabCursor:true,
-  autoplay: {
-    delay: 5000,
-  },
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+};
+
+const numOfSwipers = 3;
+const swipers = [];
+
+for (let i = 1; i <= numOfSwipers; i++) {
+  const swiperSelector = `.pSwiper${i}`;
+  const swiper = new Swiper(swiperSelector, swiperOptions);
+  swipers.push(swiper);
+}
